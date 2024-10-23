@@ -26,7 +26,7 @@ public class ControllerServlet extends HttpServlet {
             request.getRequestDispatcher("danhSachLoaiThuoc.jsp").forward(request, response);
         } else if (action.equalsIgnoreCase("filterByLoai")) {
             String maLoai = request.getParameter("maLoai");
-            List<Thuoc> thuocList = quanLyThuocDAO.getThuocByLoai(maLoai);
+            List<Thuoc> thuocList = quanLyThuocDAO.getDSThuocByLoaiThuoc(maLoai);
             List<LoaiThuoc> loaiThuocList = quanLyLoaiThuocDAO.getAllLoaiThuoc();
             request.setAttribute("thuocList", thuocList);
             request.setAttribute("loaiThuocList", loaiThuocList);
@@ -51,7 +51,7 @@ public class ControllerServlet extends HttpServlet {
             LoaiThuoc loaiThuoc = new LoaiThuoc();
             loaiThuoc.setMaLoai(request.getParameter("maLoai"));
             thuoc.setMaLoai(loaiThuoc);
-            quanLyThuocDAO.addThuoc(thuoc);
+            quanLyThuocDAO.add(thuoc);
             response.sendRedirect("controller?action=listThuoc");
         } else {
             response.sendRedirect("index.jsp");
