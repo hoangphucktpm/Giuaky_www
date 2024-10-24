@@ -28,6 +28,7 @@ dependencies {
     implementation('org.hibernate:hibernate-core:6.0.2.Final')
     implementation('org.glassfish.jaxb:jaxb-runtime:3.0.2')
     implementation('org.hibernate.validator:hibernate-validator:7.0.5.Final')
+    implementation('org.glassfish.jersey.core:jersey-server:3.0.2')
 
     // for accessing DB
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.2.0'

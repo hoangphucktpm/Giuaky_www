@@ -1,11 +1,9 @@
 package iuh.huynhhoangphuc_21036541_candidate.models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.checkerframework.checker.units.qual.N;
 
 import java.util.List;
 
@@ -28,7 +26,7 @@ public class Candidate {
     @Column(name = "full_name")
     private String fullName;
 
-    @OneToMany(mappedBy = "candidate", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "candidate")
     private List<Experience> experiences;
 
 }

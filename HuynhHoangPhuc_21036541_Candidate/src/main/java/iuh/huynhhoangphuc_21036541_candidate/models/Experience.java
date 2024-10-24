@@ -31,11 +31,11 @@ public class Experience {
     @Column(name = "work_desc")
     private String workDescription;
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     @Column(name = "role")
     private Roles role;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "can_id")
     private Candidate candidate;
 
