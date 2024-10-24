@@ -8,9 +8,9 @@
   </tr>
   <tr>
     <td>
-      <a href="controller?action=listLoaiThuoc">Danh sách các loại xe</a> |
-      <a href="controller?action=listThuoc">Danh sách xe</a> |
-      <a href="controller?action=addThuoc">Thêm xe mới</a>
+      <a href="controller?action=listLoaiXe">Danh sách các loại xe</a> |
+      <a href="controller?action=listXe">Danh sách xe</a> |
+      <a href="controller?action=addXe">Thêm xe mới</a>
     </td>
   </tr>
   <title>Danh Sách Loại Xe</title>
