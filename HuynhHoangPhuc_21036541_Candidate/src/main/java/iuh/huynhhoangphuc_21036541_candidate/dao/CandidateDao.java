@@ -1,4 +1,4 @@
-package iuh.huynhhoangphuc_21036541_candidate.repositories;
+package iuh.huynhhoangphuc_21036541_candidate.dao;
 
 import iuh.huynhhoangphuc_21036541_candidate.enums.Roles;
 import iuh.huynhhoangphuc_21036541_candidate.models.Candidate;
@@ -9,11 +9,11 @@ import jakarta.persistence.Persistence;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CandidateRepository {
+public class CandidateDao {
     private EntityManager entityManager;
     private EntityTransaction transaction;
 
-    public CandidateRepository() {
+    public CandidateDao() {
         entityManager = Persistence.createEntityManagerFactory("MariaDB").createEntityManager();
         transaction = entityManager.getTransaction();
     }

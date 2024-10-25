@@ -45,7 +45,7 @@
     <button type="submit">Lọc</button>
 </form>
 
-<table>
+<table border="1">
     <thead>
     <tr>
         <th>STT</th>

@@ -24,7 +24,7 @@
 </tr>
 <h1>Danh sách loại thuốc</h1>
 
-<table>
+<table border="1">
     <thead>
     <tr>
         <th>STT</th>
